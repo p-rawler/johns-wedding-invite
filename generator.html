@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding Guest Link Generator</title>
+    <meta name="description" content="Generate personalized wedding invitation links and guests.js entries.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="generator.js" defer></script>
+  </head>
+  <body class="generator-page">
+    <header class="generator-header">
+      <a class="brand" href="index.html">J &amp; J</a>
+      <div>
+        <p class="eyebrow">Guest links</p>
+        <h1>Personalized invite generator</h1>
+      </div>
+    </header>
+
+    <main class="generator-layout">
+      <section class="generator-panel" aria-labelledby="input-heading">
+        <h2 id="input-heading">Guest names</h2>
+        <label for="baseUrl">Invite page URL</label>
+        <input id="baseUrl" type="url" placeholder="https://example.com/index.html">
+
+        <label for="namesInput">Paste one guest name per line</label>
+        <textarea id="namesInput" rows="12" spellcheck="false">Gideon Kalanzi
+Sarah Nambi
+Mr. and Mrs. Kato</textarea>
+
+        <div class="generator-actions">
+          <button class="button button-primary" type="button" id="generateBtn">Generate links</button>
+          <button class="button button-outline" type="button" id="clearBtn">Clear</button>
+        </div>
+      </section>
+
+      <section class="generator-panel" aria-labelledby="output-heading">
+        <h2 id="output-heading">Generated output</h2>
+        <div class="generator-actions">
+          <button class="button button-primary" type="button" id="copyLinksBtn">Copy all links</button>
+          <button class="button button-outline" type="button" id="copyEntriesBtn">Copy guests.js entries</button>
+        </div>
+        <p class="status-message" id="copyStatus" role="status" aria-live="polite"></p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Link</th>
+                <th>Copy</th>
+              </tr>
+            </thead>
+            <tbody id="resultsBody"></tbody>
+          </table>
+        </div>
+
+        <label for="linksOutput">Links</label>
+        <textarea id="linksOutput" rows="8" readonly></textarea>
+
+        <label for="entriesOutput">Entries to paste inside guests.js</label>
+        <textarea id="entriesOutput" rows="8" readonly></textarea>
+      </section>
+    </main>
+  </body>
+</html>
