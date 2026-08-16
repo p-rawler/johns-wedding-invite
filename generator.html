@@ -12,6 +12,7 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
+    <script src="guests.js" defer></script>
     <script src="generator.js" defer></script>
   </head>
   <body class="generator-page">
@@ -25,17 +26,17 @@
 
     <main class="generator-layout">
       <section class="generator-panel" aria-labelledby="input-heading">
-        <h2 id="input-heading">Guest names</h2>
+        <h2 id="input-heading">Guest source</h2>
         <label for="baseUrl">Invite page URL</label>
         <input id="baseUrl" type="url" placeholder="https://example.com/index.html">
 
-        <label for="namesInput">Paste one guest name per line</label>
-        <textarea id="namesInput" rows="12" spellcheck="false">Gideon Kalanzi
-Sarah Nambi
-Mr. and Mrs. Kato</textarea>
+        <p class="generator-note" id="guestSourceNote"></p>
+
+        <label for="namesInput">Optional additional guest names, one per line</label>
+        <textarea id="namesInput" rows="12" spellcheck="false" placeholder="Paste new guest names here when you want to generate extra links not yet in guests.js"></textarea>
 
         <div class="generator-actions">
-          <button class="button button-primary" type="button" id="generateBtn">Generate links</button>
+          <button class="button button-primary" type="button" id="generateBtn">Refresh links</button>
           <button class="button button-outline" type="button" id="clearBtn">Clear</button>
         </div>
       </section>

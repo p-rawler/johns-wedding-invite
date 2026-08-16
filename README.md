@@ -52,10 +52,10 @@ If a guest code is missing, the invitation falls back to `Guest`.
 Open `generator.html`.
 
 1. Confirm the invite page URL.
-2. Paste one guest name per line.
-3. Click `Generate links`.
-4. Copy the generated links for sharing.
-5. Copy the generated entries into `guests.js`.
+2. The page automatically loads all guests already saved in `guests.js`.
+3. Copy the generated links for sharing.
+4. Paste optional extra names only if you need temporary links for guests not yet in `guests.js`.
+5. Copy the generated entries into `guests.js` when you want to save those optional extra guests.
 
 Example link:
 

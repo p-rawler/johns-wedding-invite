@@ -549,6 +549,14 @@ textarea {
   font-weight: 700;
 }
 
+.generator-note {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
 .generator-panel input,
 .generator-panel textarea {
   width: 100%;
