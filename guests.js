@@ -167,5 +167,6 @@ window.WEDDING_GUESTS = Object.freeze({
   "mr-nabulomi-walter": "Mr. Nabulomi Walter",
   "miss-kayana-ruth": "Miss Kayana Ruth",
   "mr-leju-charles": "Mr. Leju Charles",
+  "dev-sham": "Dev Sham",
   
 });
