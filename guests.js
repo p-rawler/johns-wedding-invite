@@ -43,7 +43,7 @@ window.WEDDING_GUESTS = Object.freeze({
   "mr-joseph-adiama": "Mr. Joseph Adiama",
   "mr-joel-wabire": "Mr. Joel Wabire",
   "mr-japhet-mwine": "Mr. Japhet Mwine",
-  "mr-and-mrs-habumugisha-robert": "Mr. and Mrs. Habumugisha Robert",
+  "mr-and-mrs-habumugisha-joel": "Mr. and Mrs. Habumugisha Joel",
   "miss-felistus": "Miss Felistus",
   "mr-jonathan-okali": "Mr. Jonathan Okali",
   "mr-and-mrs-batekereza-daniel": "Mr. and Mrs. Batekereza Daniel",
